@@ -99,7 +99,7 @@ if __name__ == "__main__":
     optionsDict = {}
     optionsDict["clientAddress"] = "192.168.1.161"
     optionsDict["serverAddress"] = "192.168.1.151"
-    optionsDict["use_multicast"] = True
+    optionsDict["use_multicast"] = False
 
     # This will create a new NatNet client
     optionsDict = my_parse_args(sys.argv, optionsDict)

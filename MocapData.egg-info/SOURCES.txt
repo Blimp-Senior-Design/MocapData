@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+MocapData/DataDescriptions.py
+MocapData/MoCapData.py
+MocapData/NatNetClient.py
+MocapData/PythonSample.py
+MocapData/collect.py
+MocapData/mocap.py
+MocapData.egg-info/PKG-INFO
+MocapData.egg-info/SOURCES.txt
+MocapData.egg-info/dependency_links.txt
+MocapData.egg-info/top_level.txt
