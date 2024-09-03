@@ -14,10 +14,11 @@ class Mocap():
         self.streaming_client.new_frame_listener = self.receive_new_frame
         self.streaming_client.rigid_body_listener = self.receive_rigid_body_frame
         self.current_position = (0, 0, 0)
+        self.frame = ""
 
     def receive_rigid_body_frame(self, new_id, position, rotation):
         self.current_position = position
-        print(position)
+        # print(position)
         # print("Received frame for rigid body", new_id)
 
     def get_pos(self):
@@ -36,7 +37,8 @@ class Mocap():
                 if key in data_dict:
                     out_string += data_dict[key] + " "
                 out_string += "/"
-            print(out_string)
+                self.frame = out_string
+            #   print(out_string)
 
     def start(self):
         is_running = self.streaming_client.run()
